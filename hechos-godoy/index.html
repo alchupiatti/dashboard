@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
 <meta name="googlebot" content="noindex, nofollow">
-<title>Escucha social — Misiones</title>
+<title>Caso Godoy — Corrientes</title>
 <style>
 :root{color-scheme:light dark;--pa:#f7f7f5;--su:#fff;--ink:#121212;
  --ink2:#56554f;--mut:#8a8880;--bor:rgba(0,0,0,.14);--neg:#c0392b}
@@ -26,7 +26,7 @@ button:disabled{opacity:.6;cursor:default}
  border-top:1px solid var(--bor);padding-top:12px}
 a{color:inherit}
 </style></head><body><div class="c">
-<h1>Escucha social — Misiones</h1>
+<h1>Caso Godoy — Corrientes</h1>
 <p>Este panel lleva <b>2,616 citas de comentarios</b> de ciudadanos. Va con
 clave para que no lo abra cualquiera que encuentre la dirección.</p>
 <form id="f"><input id="p" type="password" placeholder="Frase de acceso"
@@ -43,7 +43,7 @@ $("f").addEventListener("submit",async ev=>{
   const b=$("b"),e=$("e");
   b.disabled=true;b.textContent="Abriendo…";e.textContent="";
   try{
-    const r=await fetch("tablero-1792251263.enc");
+    const r=await fetch("tablero-1792263345.enc");
     if(!r.ok)throw new Error("no se pudo bajar el panel");
     const buf=new Uint8Array(await r.arrayBuffer());
     const salt=buf.slice(0,16),iv=buf.slice(16,28),datos=buf.slice(28);
